@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>netcoreapp3.1;net40</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+  
+  <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
+    <Reference Include="System.Design" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFrameworks>netcoreapp3.1;net40-client</TargetFrameworks>
+    <UseWindowsForms>true</UseWindowsForms>
+    
+    <AssemblyTitle>Hiz.Windows.Forms.HexBox</AssemblyTitle>
+    <Description>Hex Edit Control (.NET C#)</Description>
+    <Company>Hiz</Company>
+    <Product>Hiz.Windows.Forms.HexBox</Product>
+    <AssemblyVersion>1.7.0</AssemblyVersion>
+
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>HexBox.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net40-client'">
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+  </PropertyGroup>
+</Project>
